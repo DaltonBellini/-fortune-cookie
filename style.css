@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --font-family-text: 'DM Sans', sans-serif;
+    --font-family-h1: 'Montserrat', sans-serif;
+    --font-card-luck:  'Dancing Script', cursive;
+}
+
+body{
+    background: linear-gradient(45deg, #190361, #bb00ff);
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+    
+
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: var(--font-family-text);
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+main{
+    background-color: white;
+    box-shadow: 0px 20px 50px;
+    width: min(42.8rem , 90%);
+    margin-top: -6rem;
+    padding: 6.4rem 4.8rem 6.4rem 6.4rem;
+    text-align: center;
+    border-radius: .5rem;
+
+}
+
+/* SCREEN1 */
+
+.screen1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+h1,h2{
+    font-family: var(--font-family-h1);
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    color:#34355B ;
+    width: 25.8rem;
+    margin-bottom: 1.4rem;
+    
+}
+
+p{
+    color: #34355B;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2.5rem;
+}
+.screen1 button{
+    border: none;
+    background-color: transparent;
+    cursor:pointer;
+}
+
+/*Screen2 */
+.screen2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    width: 29.7rem;
+    padding-bottom:1.7rem ;
+}
+.card-luck{
+    width: 29.3rem;
+    background-color:#E4EDF1;
+    padding: 1.0rem;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+    margin-bottom: 6rem;
+}
+
+.screen2 span{
+    font-family: var(--font-card-luck);
+    font-size: 2.4rem;
+}
+
+.screen2 button{
+    font-family: var(--font-family-text);
+    font-weight: 700;
+    width: 17.4rem;
+    height: 5.2rem;
+    background-color:#FF9500 ;
+    border: none;
+    border-radius: .4rem;
+
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    margin-top: 6rem;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
